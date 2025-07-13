@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EPIDENGIS CALI - Geoportal del Dengue</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #005eb8;
+            color: white;
+            padding: 1em;
+        }
+        .logo {
+            width: 80px;
+        }
+        nav button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        main {
+            padding: 40px 5% 20px 5%;
+            text-align: justify;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #005eb8;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 2em;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        img {
+            max-width: 90%;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets/Logo_sig_dengue_EPIDENGIS.png" alt="Logo EPIDENGIS" class="logo">
+        <h1>EPIDENGIS CALI</h1>
+        <nav>
+            <button onclick="location.href='geovisor.html'">Geovisor</button>
+            <button onclick="location.href='tablero.html'">Tablero de Control</button>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>¿Qué es el dengue?</h2>
+            <p>El dengue es una enfermedad viral aguda causada por el virus del dengue (DENV), que pertenece al género Flavivirus y presenta cuatro serotipos distintos: DENV-1, DENV-2, DENV-3 y DENV-4. Es transmitido principalmente por el mosquito Aedes aegypti, un vector de hábitos diurnos, domiciliarios y altamente antropofílico.</p>
+            <p>Clínicamente, se presenta desde fiebre clásica hasta formas graves como el dengue hemorrágico, caracterizado por extravasación plasmática, sangrados severos y disfunción orgánica. Se transmite cuando un mosquito hembra pica a una persona infectada y posteriormente a otras.</p>
+            <p>Es un problema creciente de salud pública en zonas tropicales y subtropicales, especialmente en América Latina, sudeste asiático y África.</p>
+            <img src="assets/infografia_dengue_Cali.png" alt="Infografía del dengue en Cali">
+        </section>
+
+        <section>
+            <h2>Contexto histórico y evolución del dengue en Cali</h2>
+            <p>Santiago de Cali presenta un comportamiento endémico del dengue con picos epidémicos. Fuertes-Bucheli et al. (2016) evidenciaron conglomerados de dengue, Zika y chikunguña entre 2014–2016 en comunas del centro-este y noreste, zonas vulnerables y densamente pobladas.</p>
+            <p>Abonia et al. (2021) reportaron ciclos epidémicos en la comuna 6 entre 2015 y 2019. La co-circulación de los cuatro serotipos aumenta el riesgo de formas graves, especialmente en niños.</p>
+        </section>
+
+        <section>
+            <h2>Factores que favorecen su propagación</h2>
+            <ul>
+                <li><b>Climáticos:</b> Temperaturas elevadas, alta humedad, lluvias intensas.</li>
+                <li><b>Ambientales/infraestructura:</b> Agua estancada, residuos sólidos, criaderos.</li>
+                <li><b>Socioeconómicos:</b> Pobreza, servicios públicos deficientes, alta densidad.</li>
+                <li><b>Urbanización/movilidad:</b> Urbanización no planificada, movilidad alta.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ciclo de vida del mosquito Aedes aegypti</h2>
+            <ol>
+                <li><b>Huevo:</b> En paredes de recipientes con agua limpia.</li>
+                <li><b>Larva:</b> Se desarrolla en agua, 4 estadios larvales.</li>
+                <li><b>Pupa:</b> Fase flotante, no se alimenta.</li>
+                <li><b>Adulto:</b> Hembra pica para alimentar huevos. Mayor actividad en la mañana y tarde.</li>
+            </ol>
+            <p>Ruiz-Polo et al. (2024) destacan su adaptabilidad en contextos rurales y climáticamente extremos.</p>
+        </section>
+
+        <section>
+            <h2>Zonas críticas y distribución espacial en Cali</h2>
+            <p>El análisis SIG ha identificado zonas críticas: Comunas 3, 6, 7, 13 y 15 concentran la mayor cantidad de casos. Se observan altos niveles de criaderos positivos, viviendas precarias, cercanía a canales, lotes baldíos y deficiencias en servicios públicos.</p>
+            <img src="assets/mapa_calor_dengue.png" alt="Mapa de calor de Cali">
+            <img src="assets/Mapa_criaderos.png" alt="Mapa de criaderos de Aedes aegypti">
+            <img src="assets/Zonas_vulnerables_Cali.png" alt="Zonas vulnerables de Cali">
+        </section>
+
+        <section>
+            <h2>Impacto en la salud pública</h2>
+            <ul>
+                <li>Alta morbilidad en niños y jóvenes.</li>
+                <li>Aumento en demanda hospitalaria e ingreso a UCI.</li>
+                <li>Presión financiera al sistema de salud.</li>
+                <li>Riesgo de mortalidad en casos graves o coinfecciones.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Respuestas institucionales y tecnologías aplicadas</h2>
+            <p><b>Respuestas institucionales:</b> INS: Protocolos de vigilancia activa, pasiva y comunitaria. Campañas de eliminación de criaderos y uso de larvicidas. Articulación intersectorial local.</p>
+            <p><b>Tecnologías aplicadas:</b> SIG y teledetección para mapear casos y riesgos. Sistemas de Alerta Temprana (SAT). PostgreSQL/PostGIS para bases de datos espaciales. Modelos espacio-temporales para detectar brotes.</p>
+        </section>
+
+        <section>
+            <h2>Distribución global del dengue</h2>
+            <img src="assets/Mapa_mundial_dengue.png" alt="Mapa mundial del dengue">
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 EPIDENGIS CALI - Universidad del Valle. Proyecto académico sin fines comerciales.</p>
+    </footer>
+</body>
+</html>
